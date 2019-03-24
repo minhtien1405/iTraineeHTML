@@ -1,0 +1,1 @@
+bare HTML elements (H1, a, p, etc…)

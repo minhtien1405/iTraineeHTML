@@ -1,0 +1,75 @@
+.navbar__brand{
+  padding-left:13vw;
+  &--img{
+    width:131px;
+    height:auto;
+  }
+}
+.navbar__nav {
+  padding-right : 12.5vw;
+  &--item {
+    @include font-mod();
+    color : $font-color-db;
+    padding : 2.2vw 1.1vw 2.2vw 1.1vw;
+    &:hover {
+      border-top: 6px solid $bd-color;
+      padding-top: 2vw;
+    }
+    &--apply{
+      background-color : #2766d4;
+    }
+  }
+}
+.title--bold {
+    font-weight: bold;
+}
+.title--image{
+  width: 100%;
+}
+
+.background{
+  &--title {
+    background: url("../assets/images/hero-img@2x.png") no-repeat center center;
+    padding: 20vh 0 20vh 0;
+    background-size: cover;
+  }
+  &--benefits {
+    background: url("../assets/images/bg@2x.png") no-repeat center center;
+    background-color:#f3f3f3;
+    padding: 5vh 0 40vh 0;
+    background-size: cover;
+  }
+
+}
+.title__spacing{
+  padding-left: 17vw;
+}
+.left-lines{
+  @include left-lines();
+}
+/* Benefits */
+.boxes{
+  padding-left:17vw;
+  padding-right: 13.5vw;
+  &__box{
+    margin:1%;
+    padding:3%;
+    box-shadow: 0 0 60px 10px rgba(13, 37, 62, 0.1);
+    background-color: var(--white);
+    &__img-icon{
+      width:70%;
+      height:auto;
+      align: center;
+    }
+  }
+}
+/*drawing the blue circle*/
+.oval{
+  background-color:rgb(246,248,253);
+  width: 100px;
+  height: auto;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 50%;
+  line-height: 100px;
+}

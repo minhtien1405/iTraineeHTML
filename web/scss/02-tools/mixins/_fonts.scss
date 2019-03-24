@@ -1,0 +1,23 @@
+@mixin declare-font-face($font-family, $font-filename, $svg-id, $font-weight: normal, $font-style: normal, $font-stretch: normal) {
+  @font-face {
+     font-family: $font-family;
+    src: url('../fonts/#{$font-filename}.eot');
+    src: url('../fonts/#{$font-filename}.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/#{$font-filename}.woff2') format('woff2'),
+    url('../fonts/#{$font-filename}.woff') format('woff'),
+    url('../fonts/#{$font-filename}.ttf') format('truetype'),
+    url('../fonts/#{$font-filename}.svg##{$svg-id}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-stretch: $font-stretch;
+  }
+}
+@mixin font-mod($font-family:'Quicksand', $font-weight: normal, $font-style: normal, $font-stretch: normal, $line-height:normal, $font-color:black){
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-stretch: $font-stretch;
+  line-height: $line-height;
+  letter-spacing: 1px;
+  color: var(--$font-color);
+}

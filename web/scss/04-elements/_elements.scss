@@ -1,0 +1,31 @@
+body{
+  font-family: $font-family;
+}
+nav{
+  background-color: $color--bg--1;
+}
+/* Title */
+h1,h4,h5{
+  @include font-mod($font-weight :300 , $font-color : white);
+  font-size:72px;
+}
+
+h4{
+  font-size:20px;
+  line-height:1.5;
+  margin-left:3%;
+  margin-right: 70%;
+}
+/* Benefits */
+h3{
+  font-size: 50px;
+  font-weight: bold;
+  color:$font-color-db;
+  line-height: 1.2;
+}
+h5{
+  font-size: 20px;
+  font-weight: bold;
+  color:$font-color-db;
+  padding-top:1rem;
+}
